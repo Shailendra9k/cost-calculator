@@ -24,7 +24,8 @@ const costs = [ {name:"Rent", amount:270.25, span:costSpan[2]},
 let totalRent = function () {
     costSpan.forEach((item, index, arr) => {
         
-        console.log (item.days * costs[0].amount);
+        let rent = item.days * costs[0].amount / `${costSpan[2].days}`;
+        console.log(rent.toFixed(2));
 
     })
     
@@ -33,13 +34,14 @@ let totalRent = function () {
 
 
 let totalFoodCost = function () {
-    return costSpan.forEach((item, index, arr) => {
+     costSpan.forEach((item, index, arr) => {
         
-        return(item.days * costs[1].amount);
+        let foodCost = item.days * costs[1].amount;
+        console.log(foodCost.toFixed(2))
     })
    
 }
-console.log(totalFoodCost())
+totalFoodCost()
 
 
 
