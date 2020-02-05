@@ -33,13 +33,14 @@ let totalRent = function () {
 
 
 let totalFoodCost = function () {
-    costSpan.forEach((item, index, arr) => {
+    return costSpan.forEach((item, index, arr) => {
         
-        console.log(item.days * costs[1].amount);
+        return(item.days * costs[1].amount);
     })
    
 }
-totalFoodCost()
+console.log(totalFoodCost())
+
 
 
 // Then do whatever reports / analysis or so, with all the costs
